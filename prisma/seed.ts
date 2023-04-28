@@ -9,7 +9,6 @@ const clearDb = async () => {
   await prisma.text.deleteMany();
 };
 
-//Add game texts/quotes to database
 const addQuotesToDatabase = async () => {
   await fetch("https://zenquotes.io/api/quotes")
     .then((response) => response.json())
