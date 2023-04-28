@@ -14,4 +14,4 @@ PORT=3000
 
 3. Then use in the CLI:
 
-npm start
+npm run serve
