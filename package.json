@@ -29,6 +29,7 @@
     "express": "^4.18.2",
     "express-async-errors": "^3.1.1",
     "jsonwebtoken": "^9.0.0",
+    "nodemon": "^2.0.22",
     "zod": "^3.21.4",
     "zod-express-middleware": "^1.4.0"
   }
