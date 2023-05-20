@@ -3,6 +3,8 @@ import { encryptPassword } from "../src/auth-utils";
 import { newDateFormatter } from "../src/helper";
 const prisma = new PrismaClient();
 
+// Clears entire database and fills it with dummy data
+
 const clearDb = async () => {
   await prisma.score.deleteMany();
   await prisma.user.deleteMany();
