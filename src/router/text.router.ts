@@ -4,7 +4,7 @@ import { authMiddleware } from "../auth-utils";
 
 const textController = Router();
 
-textController.get("/text", authMiddleware, async (req, res) => {
+textController.get("/text", async (req, res) => {
   const allText = await prisma.text.findMany();
   return res.status(200).json(allText);
 });
