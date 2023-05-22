@@ -28,6 +28,7 @@ textController.post("/text", async (req, res) => {
         });
       }
     });
+  return res.status(200).json(quotes);
 });
 
 export { textController };
