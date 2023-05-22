@@ -1,17 +1,13 @@
 Welcome to the Backend side of Type Master!
 
-1. Install dependencies
+This is the deployed backend server to the typing web game Type Master
 
-npm i
+Languages, tools and libraries used:
 
-2. create a .env file with:
-
-DATABASE_URL="file:./dev.db"
-
-JWT_SECRET="test123"
-
-PORT=3000
-
-3. Then use in the CLI:
-
-npm run serve
+• TypeScript
+• Bcrypt
+• Express
+• cors
+• Prisma
+• JSON Web Tokens (JWT)
+• Zod middleware
