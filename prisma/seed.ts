@@ -1,7 +1,6 @@
-import { PrismaClient } from "@prisma/client";
 import { encryptPassword } from "../src/auth-utils";
 import { newDateFormatter } from "../src/helper";
-const prisma = new PrismaClient();
+import { prisma } from "./db.setup";
 
 // Clears entire database and fills it with dummy data
 

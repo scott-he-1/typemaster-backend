@@ -15,4 +15,19 @@ textController.get("/text/random", authMiddleware, async (req, res) => {
   return res.status(200).json(randomText);
 });
 
+textController.post("/text", async (req, res) => {
+  await prisma.text.deleteMany();
+  const quotes = await fetch("https://zenquotes.io/api/quotes")
+    .then((response) => response.json())
+    .then(async (data) => {
+      for (const quote of data) {
+        await prisma.text.create({
+          data: {
+            text: quote.q,
+          },
+        });
+      }
+    });
+});
+
 export { textController };
